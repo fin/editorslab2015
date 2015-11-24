@@ -1,105 +1,90 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
-
 body {
 	font-family: 'Roboto', sans-serif;
 }
-
 .navbar {
-	margin-bottom:0;
+	margin-bottom: 0;
 }
-
 .date {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  height: 5em;
-  width: 80%;
-  margin-right: 5px;
-  background: #efefef;
-  box-shadow: 2px 2px #e0e0e0;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	height: 5em;
+	width: 80%;
+	margin-right: 5px;
+	background: #efefef;
+	box-shadow: 2px 2px #e0e0e0;
 }
-
 .well .date {
-  background: white;
+	background: white;
 }
-
-.date .weekday,
-.date .monthday,
-.date .month {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+.date .weekday, .date .monthday, .date .month {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
 }
-
 .date .monthday {
-  font-size: 20px;
-  top: 1em;
+	font-size: 20px;
+	top: 1em;
 }
 .date .month {
-  bottom: 0;
-  top: auto;
+	bottom: 0;
+	top: auto;
 }
-
 .index h2 {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
-
 /* Detailpage Design
 *****************************/
 .navbar-brand:after {
 	content: "/Nachgefragt";
 }
-
 .navbar-brand>img {
-	display:inline-block;
+	display: inline-block;
 }
-
 .heroimage {
-	position:relative;
-	background-image:url("img/02.jpg");
-	background-size:cover;
-	height:400px;
-	background-attachment:scroll;
-	background-position:left -100px;
+	position: relative;
+	background-image: url("img/02.jpg");
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: left -100px;
 	-webkit-filter: grayscale(1);
+	background-color: #000;
 }
-
+.heroimage-shadow {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 ); /* IE6-9 */
+}
 .heroimage h1 {
-	padding:80px 0 0 80px;
-	font-size:60px;
-	color:#fff;
-	margin-top:0;
-	font-weight:900;
-	text-shadow:1px 1px 2px rgba(0,0,0,0.5);
+	padding: 80px 0 0 0;
+	font-size: 60px;
+	color: #fff;
+	margin-top: 0;
+	font-weight: 900;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
-
 .heroimage p {
-	padding:0px 0 0 80px;
-	font-size:20px;
-	color:#fff;
+	padding: 0;
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 40px;
 }
-
 .nextdate {
-    background-color: #000;
-
-    margin: 0px auto 0;
-    position: relative;
-    top: -30px;
+	background-color: #000;
+	margin: 0px auto 0;
+	position: relative;
+	top: -10px;
 }
-
 .nextdate p {
-	font-size:24px;
-	
-	text-align:center;
-	color:#fff;
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
 }
-
-
-	
-
