@@ -38,6 +38,11 @@ body {
   top: auto;
 }
 
+.index h2 {
+  padding: 0;
+  margin: 0;
+}
+
 /* Detailpage Design
 *****************************/
 .heroimage {
