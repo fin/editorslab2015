@@ -1,11 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+
 body {
+	font-family: 'Roboto', sans-serif;
 }
 
+.navbar {
+	margin-bottom:0;
+}
 
 /* Detailpage Design
 *****************************/
 .heroimage {
-	background-image:url(/img/heroimage.jpg);
+	background-image:url("https://placeholdit.imgix.net/~text?txtsize=33&txt=960x400&w=960&h=400");
 	background-size:cover;
+	height:400px;
+	background-attachment:scroll;
+	background-position:left top;
+}
+
+.heroimage h1 {
+	margin-top:0;
+	font-size:40px;
 }
 
