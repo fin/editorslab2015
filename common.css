@@ -1,2 +1,10 @@
 body {
 }
+
+
+/* Detailpage Design
+*****************************/
+.heroimage {
+	background-image:url(/img/heroimage.jpg);
+	background-size:cover;
+}
