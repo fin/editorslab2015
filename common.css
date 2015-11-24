@@ -31,3 +31,11 @@ body {
   bottom: 0;
   top: auto;
 }
+
+/* Detailpage Design
+*****************************/
+.heroimage {
+	background-image:url(/img/heroimage.jpg);
+	background-size:cover;
+}
+
