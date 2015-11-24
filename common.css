@@ -110,4 +110,27 @@ body {
 
 
 	
+.live .qmark {
+  font-size: 48px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.live h2 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.live .question {
+  padding: 20px;
+  background: #fafafa;
+}
+
+.live .answer {
+  margin-top: 5px;
+  padding: 20px;
+  background: #ccffcc;
+  margin-bottom: 30px;
+}
+
 
