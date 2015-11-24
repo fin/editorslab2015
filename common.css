@@ -3,11 +3,17 @@ body {
 
 .date {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
   height: 5em;
   width: 80%;
   margin-right: 5px;
   background: #efefef;
   box-shadow: 2px 2px #e0e0e0;
+}
+
+.well .date {
+  background: white;
 }
 
 .date .weekday,
