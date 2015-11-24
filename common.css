@@ -8,6 +8,48 @@ body {
 	margin-bottom:0;
 }
 
+.date {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 5em;
+  width: 80%;
+  margin-right: 5px;
+  background: #efefef;
+  box-shadow: 2px 2px #e0e0e0;
+}
+
+.well .date {
+  background: white;
+}
+
+.date .weekday,
+.date .monthday,
+.date .month {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.date .monthday {
+  font-size: 20px;
+  top: 1em;
+}
+.date .month {
+  bottom: 0;
+  top: auto;
+}
+
+.index h2 {
+  padding: 0;
+  margin: 0;
+}
+
 /* Detailpage Design
 *****************************/
 .heroimage {
