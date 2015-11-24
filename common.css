@@ -61,15 +61,24 @@ body {
 /* Detailpage Design
 *****************************/
 .heroimage {
-	background-image:url("https://placeholdit.imgix.net/~text?txtsize=33&txt=960x400&w=960&h=400");
+	position:relative;
+	background-image:url("img/img01.jpeg");
 	background-size:cover;
 	height:400px;
 	background-attachment:scroll;
-	background-position:left top;
+	background-position:left -100px;
+	-webkit-filter: grayscale(1);
 }
 
 .heroimage h1 {
-	margin-top:0;
-	font-size:40px;
+	padding:80px 0 0 80px;
+	font-size:60px;
+	color:#fff;
+}
+
+.heroimage p {
+	padding:0px 0 0 80px;
+	font-size:20px;
+	color:#fff;
 }
 
