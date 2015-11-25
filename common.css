@@ -97,20 +97,37 @@ body {
 	margin-bottom:30px;
 }
 
+
 .flip-clock-wrapper {
 	margin:0 auto 30px;
 	width:620px;
 }
+
+p.submitter {
+  color: #888888;
+  font-size: 12px;
+}
+p.submitter strong {
+  color: black;
+}
+
+p.commentlink {
+  font-size: 12px;
+  text-align: right;
+}
+
 	
 .live .qmark {
   font-size: 48px;
   vertical-align: middle;
   text-align: center;
+  font-weight: bold;
 }
 
 .live h2 {
   margin-top: 0;
   font-weight: normal;
+  font-size: 16px;
 }
 
 .live .question {
