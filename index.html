@@ -1,109 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+<title>derStandard.at / Nachgefragt</title>
 
-    <title>Bootstrap 101 Template</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" href="scripts/flipclock.css" />
+<link rel="stylesheet" href="common.css" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <link rel="stylesheet" href="common.css" />
-
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body class="index">
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img alt="Brand" src="http://derstandard.at/img/desktop/logo_derstandardat_blau.png">
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container">
-      <div class="page-header">
-        <h1>Nachgefragt</h1>
-      </div>
-
+</head>
+<body class="index">
+<div id="large-header" class="large-header">
+  <div class="large-header-shadow">
+    <canvas id="demo-canvas"></canvas>
+    <div class="main-title container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            <div class="panel panel-default">
-              <a href="detail.html">
-                <div class="panel-body row">
-                  <div class="col-xs-9">
-                    <img style="float: left; height: 100%; padding-right: 20px;" src="http://lorempixel.com/100/150/cats/" alt="kitten"/>
-                    <h2>Auswirkungen von Immigration</h2>
-                    <p class="with">Mit <img src="http://lorempixel.com/20/20/cats" /> Rainer Schüller</p>
-                  </div>
-                  <div class="col-xs-3" style="height: 100%;">
-                    <div class="date">
-                      <span class="weekday">Fr</span>
-                      <span class="monthday">27</span>
-                      <span class="month">Nov</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
+        <div class="col-lg-12">
+          <h1 class="">Nachgefragt</h1>
+          <div class="row">
+          <h2 class="col-lg-8">Wachstum durch<br>
+            Immigration statt Geburten</h2>
+            <div class="col-lg-2 question-count">
+            <span id="qcount" class="qcount">27</span><br>
+            <p class="small">Fragen</p>
             </div>
-            <h2>Archiv</h2>
-            <div class="well">
-              <a href="detail.html">
-                <div class="panel-body row">
-                  <div class="col-xs-3"><img class="img-responsive" src="http://lorempixel.com/100/150/abstract/" alt="kitten"/>
-                  </div>
-                  <div class="col-xs-6"><h2>Die Routen der Flucht</h2>
-                    <p class="with">Mit <img src="http://lorempixel.com/20/20/cats" /> Rainer Schüller</p></div>
-                  <div class="col-xs-3" style="height: 100%;">
-                    <div class="date">
-                      <span class="weekday">Fr</span>
-                      <span class="monthday">27</span>
-                      <span class="month">Nov</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="well">
-              <a href="detail.html">
-                <div class="panel-body row">
-                  <div class="col-xs-3"><img class="img-responsive" src="http://lorempixel.com/100/150/technics/" alt="kitten"/>
-                  </div>
-                  <div class="col-xs-6"><h2>Schlepper und Profiteure</h2>
-                    <p class="with">Mit <img src="http://lorempixel.com/20/20/cats" /> Rainer Schüller</p></div>
-                  <div class="col-xs-3" style="height: 100%;">
-                    <div class="date">
-                      <span class="weekday">Fr</span>
-                      <span class="monthday">27</span>
-                      <span class="month">Nov</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
+           </div>
+            
+          <h3>Live Beantwortung startet in</h3>
+          <div class="flip-counter clock"></div>
+          <p class="text-center"> <a href="detail.html" class="btn btn-lg btn-info">Jetzt teilnehmen</a> </p>
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+  
+  <div class="page-header">
+  <h1>Nachgefragt</h1>
+</div>
 
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    <div class="panel panel-default"> <a href="detail.html">
+      <div class="panel-body row">
+        <div class="col-xs-9"> <img style="float: left; height: 100%; padding-right: 20px;" src="http://lorempixel.com/100/150/cats/" alt="kitten"/>
+          <h2>Auswirkungen von Immigration</h2>
+          <p class="with">Mit <img src="http://lorempixel.com/20/20/cats" /> Rainer Schüller</p>
+        </div>
+        <div class="col-xs-3" style="height: 100%;">
+          <div class="date"> <span class="weekday">Fr</span> <span class="monthday">27</span> <span class="month">Nov</span> </div>
+        </div>
+      </div>
+      </a> </div>
+    <h2>Archiv</h2>
+    <div class="well"> <a href="detail.html">
+      <div class="panel-body row">
+        <div class="col-xs-3"><img class="img-responsive" src="http://lorempixel.com/100/150/abstract/" alt="kitten"/> </div>
+        <div class="col-xs-6">
+          <h2>Die Routen der Flucht</h2>
+          <p class="with">Mit <img src="http://lorempixel.com/20/20/cats" /> Rainer Schüller</p>
+        </div>
+        <div class="col-xs-3" style="height: 100%;">
+          <div class="date"> <span class="weekday">Fr</span> <span class="monthday">27</span> <span class="month">Nov</span> </div>
+        </div>
+      </div>
+      </a> </div>
+    <div class="well"> <a href="detail.html">
+      <div class="panel-body row">
+        <div class="col-xs-3"><img class="img-responsive" src="http://lorempixel.com/100/150/technics/" alt="kitten"/> </div>
+        <div class="col-xs-6">
+          <h2>Schlepper und Profiteure</h2>
+          <p class="with">Mit <img src="http://lorempixel.com/20/20/cats" /> Rainer Schüller</p>
+        </div>
+        <div class="col-xs-3" style="height: 100%;">
+          <div class="date"> <span class="weekday">Fr</span> <span class="monthday">27</span> <span class="month">Nov</span> </div>
+        </div>
+      </div>
+      </a> </div>
+  </div>
+</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-  </body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="scripts/flipclock.min.js"></script> 
+<script src="scripts/TweenLite.min.js"></script> 
+<script src="scripts/EasePack.min.js"></script> 
+<script src="scripts/rAF.js"></script> 
+<script src="scripts/demo-1.js"></script>
+<script src="scripts/countup.js"></script>
+<script src="scripts/general.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script> 
+
+</body>
 </html>
-
