@@ -5,6 +5,56 @@ body {
 .navbar {
 	margin-bottom: 0;
 }
+
+#large-header {
+		position: relative;
+	background-image: url("img/02.jpg");
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: left -100px;
+	
+	background-color: #000;
+}
+
+.large-header-shadow {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 ); /* IE6-9 */
+}
+
+.main-title {
+	position:absolute;
+	top:0;
+	left:70px;
+}
+
+.main-title h1{
+	padding: 90px 0 0 0;
+	font-size: 30px;
+	color: #fff;
+	margin-top: 0;
+	font-weight: 900;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.main-title h2 {
+	margin: 80px 0 0 0;
+	font-size: 50px !important;
+	color: #fff;
+	margin-top: 0;
+	font-weight: 900;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.main-title h3 {
+	text-align:center;
+	margin: 50px 0 30px 0;
+	font-size: 30px !important;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
 .date {
 	position: relative;
 	display: inline-block;
@@ -45,6 +95,31 @@ body {
 	font-size: 12px;
 	margin-top: 6px;
 }
+.index .flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: -1.5em;
+  right: -86px;
+  color: #fff;
+  text-shadow: none; }
+ 
+ .index .question-count .qcount {
+	 	margin: 80px 0 0 0;
+	font-size: 70px !important;
+	color: #fff;
+	margin-top: 0;
+	font-weight: 900;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+ }
+ 
+  .index .question-count .small {
+	  color:#fff;
+	  font-size:18px;
+	  font-weight: 700;
+	  margin:-20px 0 0 0;
+	  padding:0;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
 /* Detailpage Design
 *****************************/
 .navbar-brand:after {
@@ -59,13 +134,12 @@ body {
 	background-size: cover;
 	background-attachment: scroll;
 	background-position: left -100px;
-	-webkit-filter: grayscale(1);
 	background-color: #000;
 }
 .heroimage-shadow {
-	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+ */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+ */
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 ); /* IE6-9 */
 }
 .heroimage h1 {
@@ -83,15 +157,16 @@ body {
 	margin-bottom: 40px;
 }
 .nextdate {
-	background-color: #000;
+	background-color: #efefef;
 	margin: 0px auto 0;
 	position: relative;
-	top: -10px;
+	padding:10px;
 }
 .nextdate p {
-	font-size: 24px;
+	font-size: 22px;
+	font-weight:900;
 	text-align: center;
-	color: #fff;
+	color: #000;
 	margin-bottom: 30px;
 }
 .flip-clock-wrapper {
@@ -226,7 +301,7 @@ p.commentlink {
 	letter-spacing: 0.3px;
 	margin-right: 9px;
 	margin-top: 9px;
-	margin-bottom:9px;
+	margin-bottom: 9px;
 	padding: 6px 15px;
 }
 .dropdown > a > span.green:before {
@@ -235,31 +310,27 @@ p.commentlink {
 .status-upload form button > i {
 	margin-right: 7px;
 }
-
 .question {
-	margin-bottom:50px;
-	box-shadow:1px 1px 8px rgba(0,0,0,0.2);
-	padding:15px;
+	margin-bottom: 50px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+	padding: 15px;
 }
-
 .question .hottopic {
-	    position: absolute;
-    left: -13px;
-    top: 44px;
-    background-color:#F96;
-    color: #fff;
-    font-size: 9px;
-    font-weight: bold;
-    padding: 3px;
-	    transform: rotate(-45deg);
+	position: absolute;
+	left: -13px;
+	top: 44px;
+	background-color: #F96;
+	color: #fff;
+	font-size: 9px;
+	font-weight: bold;
+	padding: 3px;
+	transform: rotate(-45deg);
 }
-
 .question h2 {
-	font-size:24px;
+	font-size: 24px;
 }
-
 .question .col-lg-10 {
 	padding-top: 15px;
-    border-right: 1px solid #ccc;
-    min-height: 115px;
+	border-right: 1px solid #ccc;
+	min-height: 115px;
 }
