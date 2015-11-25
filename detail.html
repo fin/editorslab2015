@@ -136,6 +136,21 @@
 </div>
 </div>
 </div>
+<div class="modal fade " id="emptyModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+  <div class="modal-header">
+    <h4>Leere Frage!</h4>
+  </div>
+  <div class="modal-body">
+    <p>Wir können leider keine leeren Fragen beantwoten - bitte schreib etwas ins Frage-Feld hinein!</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+  </div>
+</div>
+</div>
+</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
@@ -148,16 +163,16 @@
 <script type="text/template" id="question_template">
       <div class="question clearfix">
         <div class="col-sm-12">
-          <div class="small pull-left">User <strong>Flamegate</strong> fragt:</div>
-          <div class="small pull-right text-muted ">5 minutes ago</div>
+          <div class="small pull-left">User <strong><%= user %></strong> fragt:</div>
+          <div class="small pull-right text-muted ">just now</div>
         </div>
         <div class="col-sm-10">
-          <p>Wachstum, Wachstum, Wachstum Ab wann wirds denn in Aut wirklich eng? 9Mio, 10Mio? Mit oder ohne Integration und Werteblabla - eine ständig steigende Bevölkerungszahl wird uns so dermasen auf den Kopf fallen, da braucht keiner Angst haben wegen Pensionen oder ähnlichen!</p>
+          <%= content %>
         </div>
         <div class="col-sm-2">
           <div class="upvote">
             <div class="hottopic">HOT</div>
-            <span class="count">98</span> <span class="small">User haben Interesse</span></div>
+            <span class="count">1</span> <span class="small">User haben Interesse</span></div>
         </div>
         <div class="col-sm-12">
           <button class="btn center-block btn-info" data-toggle="modal" data-target=".bs-success-modal">Interessiert mich auch</button>
@@ -166,18 +181,63 @@
 </script>
 
 <script>
-$('[data-target]').on('click', function(x) {
+// Simple JavaScript Templating
+// John Resig - http://ejohn.org/ - MIT Licensed
+(function(){
+  var cache = {};
+ 
+  this.tmpl = function tmpl(str, data){
+    // Figure out if we're getting a template, or if we need to
+    // load the template - and be sure to cache the result.
+    var fn = !/\W/.test(str) ?
+      cache[str] = cache[str] ||
+        tmpl(document.getElementById(str).innerHTML) :
+     
+      // Generate a reusable function that will serve as a template
+      // generator (and which will be cached).
+      new Function("obj",
+        "var p=[],print=function(){p.push.apply(p,arguments);};" +
+       
+        // Introduce the data as local variables using with(){}
+        "with(obj){p.push('" +
+       
+        // Convert the template into pure JavaScript
+        str
+          .replace(/[\r\t\n]/g, " ")
+          .split("<%").join("\t")
+          .replace(/((^|%>)[^\t]*)'/g, "$1\r")
+          .replace(/\t=(.*?)%>/g, "',$1,'")
+          .split("\t").join("');")
+          .split("%>").join("p.push('")
+          .split("\r").join("\\'")
+      + "');}return p.join('');");
+   
+    // Provide some basic currying to the user
+    return data ? fn( data ) : fn;
+  };
+})();
+
+$('#question_list').on('click', '[data-target]', function(x) {
   var el = $(this).parents(".question").first().find(".upvote .count");
+  var el = $(this).parents(".question").first().find(".upvote .count");
+  console.log(el);
   el.text(parseInt(el.text())+1);
 });
 $('[type="submit"]').on('click', function(x) {
   console.log(this);
-  console.log(this.form.question_text.value);
-  var text = $('#question_template').text();
+  var text = this.form.question_text.value;
+  var tpl = $('#question_template').text();
 
-  console.log(text.replace(/\n/g,'br'));
+  text = text.replace(/\n/g,'<br />');
 
-  $('<div>wtf</div>').insertBefore($(".question").first());
+  if(text.length==0) {
+    $('#emptyModal').modal('show');
+    return false;
+  }
+
+  var fragment = tmpl("question_template", {user: 'testUser', content: text});
+  var jfragment = $(fragment);
+  jfragment.insertBefore($(".question").first());
   return false;
 });
 </script>
