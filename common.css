@@ -62,8 +62,8 @@ body {
 	height: 5em;
 	width: 80%;
 	margin-right: 5px;
+	margin-left:5px;
 	background: #efefef;
-	box-shadow: 2px 2px #e0e0e0;
 }
 .well .date {
 	background: white;
@@ -72,7 +72,6 @@ body {
 	display: block;
 	position: absolute;
 	top: 0;
-	left: 0;
 	width: 100%;
 	padding: 0;
 	margin: 0;
@@ -80,11 +79,16 @@ body {
 }
 .date .monthday {
 	font-size: 20px;
-	top: 1em;
+	color:#000;
+	line-height:40px;
 }
 .date .month {
-	bottom: 0;
-	top: auto;
+	background-color: #C00;
+    color: #fff;
+    bottom: 0;
+    top: 40px;
+    vertical-align: middle;
+    line-height: 30px;
 }
 .index h2 {
 	padding: 0;
@@ -119,6 +123,21 @@ body {
 	  padding:0;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   }
+  
+  .question h2 {
+	  margin-bottom:8px;
+  }
+  
+  .question > a {
+	  color:#000
+  }
+  
+    
+  .question:hover {
+	  box-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+	  color:#000
+  }
+ 
   
 /* Detailpage Design
 *****************************/
