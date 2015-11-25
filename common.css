@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 body {
 	font-family: 'Roboto', sans-serif;
 }
@@ -31,6 +32,7 @@ body {
 }
 
 .main-title h1{
+	font-family: 'Lobster', cursive;
 	padding: 90px 0 0 0;
 	font-size: 30px;
 	color: #fff;
@@ -137,6 +139,10 @@ body {
   .question:hover {
 	  box-shadow: 1px 1px 8px rgba(0,0,0,0.6);
 	  color:#000
+  }
+  
+  .page-header h3 {
+	  font-family: 'Lobster', cursive;
   }
  
   
