@@ -237,8 +237,27 @@ p.commentlink {
 
 .question {
 	margin-bottom:50px;
+	box-shadow:1px 1px 8px rgba(0,0,0,0.2);
+	padding:15px;
+}
+
+.question .hottopic {
+	    position: absolute;
+    left: -13px;
+    top: 44px;
+    background-color:#F96;
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 3px;
 }
 
 .question h2 {
 	font-size:24px;
+}
+
+.question .col-lg-10 {
+	padding-top: 15px;
+    border-right: 1px solid #ccc;
+    min-height: 115px;
 }
