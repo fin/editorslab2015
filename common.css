@@ -6,32 +6,27 @@ body {
 .navbar {
 	margin-bottom: 0;
 }
-
 #large-header {
-		position: relative;
+	position: relative;
 	background-image: url("img/02.jpg");
 	background-size: cover;
 	background-attachment: scroll;
 	background-position: left -100px;
-	
 	background-color: #000;
 }
-
 .large-header-shadow {
 	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+ */
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 ); /* IE6-9 */
 }
-
 .main-title {
-	position:absolute;
-	top:0;
-	left:0px;
-  width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 100%;
 }
-
-.main-title h1{
+.main-title h1 {
 	font-family: 'Lobster', cursive;
 	padding: 90px 0 0 0;
 	font-size: 30px;
@@ -40,7 +35,6 @@ body {
 	font-weight: 900;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
-
 .main-title h2 {
 	margin: 80px 0 0 0;
 	font-size: 50px !important;
@@ -49,15 +43,13 @@ body {
 	font-weight: 900;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
-
 .main-title h3 {
-	text-align:center;
+	text-align: center;
 	margin: 50px 0 30px 0;
 	font-size: 30px !important;
 	color: #fff;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
-
 .date {
 	position: relative;
 	display: inline-block;
@@ -65,7 +57,7 @@ body {
 	height: 5em;
 	width: 80%;
 	margin-right: 5px;
-	margin-left:5px;
+	margin-left: 5px;
 	background: #efefef;
 }
 .well .date {
@@ -82,16 +74,16 @@ body {
 }
 .date .monthday {
 	font-size: 20px;
-	color:#000;
-	line-height:40px;
+	color: #000;
+	line-height: 40px;
 }
 .date .month {
 	background-color: #C00;
-    color: #fff;
-    bottom: 0;
-    top: 40px;
-    vertical-align: middle;
-    line-height: 30px;
+	color: #fff;
+	bottom: 0;
+	top: 40px;
+	vertical-align: middle;
+	line-height: 30px;
 }
 .index h2 {
 	padding: 0;
@@ -103,49 +95,49 @@ body {
 	margin-top: 6px;
 }
 .index .flip-clock-divider .flip-clock-label {
-  position: absolute;
-  top: -1.5em;
-  right: -86px;
-  color: #fff;
-  text-shadow: none; }
- 
- .index .question-count .qcount {
-	 	margin: 80px 0 0 0;
+	position: absolute;
+	top: -1.5em;
+	right: -86px;
+	color: #fff;
+	text-shadow: none;
+}
+.index .question-count .qcount {
+	margin: 80px 0 0 0;
 	font-size: 70px !important;
 	color: #fff;
 	margin-top: 0;
 	font-weight: 900;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
- }
- 
-  .index .question-count .small {
-	  color:#fff;
-	  font-size:18px;
-	  font-weight: 700;
-	  margin:-20px 0 0 0;
-	  padding:0;
+}
+.index .question-count .small {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	margin: -20px 0 0 0;
+	padding: 0;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-  }
-  
-  .question h2 {
-	  margin-bottom:8px;
-  }
-  
-  .question > a {
-	  color:#000
-  }
-  
-    
-  .question:hover {
-	  box-shadow: 1px 1px 8px rgba(0,0,0,0.6);
-	  color:#000
-  }
-  
-  .page-header h3 {
-	  font-family: 'Lobster', cursive;
-  }
- 
-  
+}
+.question h2 {
+	margin-bottom: 8px;
+}
+.question > a {
+	color: #000
+}
+.question:hover {
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+	color: #000
+}
+.page-header h3 {
+	font-family: 'Lobster', cursive;
+}
+.commentboxbg {
+	background: rgb(135,224,253); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0', GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	margin-bottom: 30px;
+}
 /* Detailpage Design
 *****************************/
 .navbar-brand:after {
@@ -186,11 +178,11 @@ body {
 	background-color: #efefef;
 	margin: 0px auto 0;
 	position: relative;
-	padding:10px;
+	padding: 10px;
 }
 .nextdate p {
 	font-size: 22px;
-	font-weight:900;
+	font-weight: 900;
 	text-align: center;
 	color: #000;
 	margin-bottom: 30px;
@@ -216,27 +208,24 @@ p.commentlink {
 	text-align: center;
 	font-weight: bold;
 }
-
 .live .antwort, .live h2, .live .question h2, .live .question {
-  margin-top: 0;
-  font-weight: normal;
-  font-size: 16px;
+	margin-top: 0;
+	font-weight: normal;
+	font-size: 16px;
 }
 .live .question {
-	margin-top:30px;
-	margin-bottom:0;
+	margin-top: 30px;
+	margin-bottom: 0;
 }
 .live .answer {
-	    background-color: #efefef;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    margin-top: 0px;
-    padding: 20px;
+	background-color: #efefef;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	margin-top: 0px;
+	padding: 20px;
 }
-
 .live .nextdate p {
-	margin-bottom:0;
+	margin-bottom: 0;
 }
-
 .widget-area {
 	background-color: #fff;
 	-webkit-border-radius: 4px;
@@ -360,7 +349,7 @@ p.commentlink {
 .question h2 {
 	font-size: 24px;
 }
-.question .col-lg-10 {
+.detail .question .col-sm-10 {
 	padding-top: 15px;
 	border-right: 1px solid #ccc;
 	min-height: 115px;
