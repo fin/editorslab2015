@@ -1,11 +1,21 @@
+/**************************************************
+*
+* Hackdays 2015
+* Fin and Roman
+*
+***************************************************/
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/* Global
+*********************/
 body {
 	font-family: 'Roboto', sans-serif;
 }
-.navbar {
-	margin-bottom: 0;
-}
+
+/* Start
+*********************/
 #large-header {
 	position: relative;
 	background-image: url("img/02.jpg");
@@ -14,18 +24,21 @@ body {
 	background-position: left -100px;
 	background-color: #000;
 }
+
 .large-header-shadow {
 	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+ */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 ); /* IE6-9 */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 );
 }
+
 .main-title {
 	position: absolute;
 	top: 0;
 	left: 0px;
 	width: 100%;
 }
+
 .main-title h1 {
 	font-family: 'Lobster', cursive;
 	padding: 90px 0 0 0;
@@ -35,6 +48,7 @@ body {
 	font-weight: 900;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
+
 .main-title h2 {
 	margin: 80px 0 0 0;
 	font-size: 50px !important;
@@ -43,6 +57,7 @@ body {
 	font-weight: 900;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
+
 .main-title h3 {
 	text-align: center;
 	margin: 50px 0 30px 0;
@@ -50,6 +65,7 @@ body {
 	color: #fff;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
+
 .date {
 	position: relative;
 	display: inline-block;
@@ -60,9 +76,11 @@ body {
 	margin-left: 5px;
 	background: #efefef;
 }
+
 .well .date {
 	background: white;
 }
+
 .date .weekday, .date .monthday, .date .month {
 	display: block;
 	position: absolute;
@@ -72,11 +90,13 @@ body {
 	margin: 0;
 	text-align: center;
 }
+
 .date .monthday {
 	font-size: 20px;
 	color: #000;
 	line-height: 40px;
 }
+
 .date .month {
 	background-color: #C00;
 	color: #fff;
@@ -85,15 +105,18 @@ body {
 	vertical-align: middle;
 	line-height: 30px;
 }
+
 .index h2 {
 	padding: 0;
 	margin: 0;
 	font-size: 20px;
 }
+
 .index p.with {
 	font-size: 12px;
 	margin-top: 6px;
 }
+
 .index .flip-clock-divider .flip-clock-label {
 	position: absolute;
 	top: -1.5em;
@@ -101,6 +124,7 @@ body {
 	color: #fff;
 	text-shadow: none;
 }
+
 .index .question-count .qcount {
 	margin: 80px 0 0 0;
 	font-size: 70px !important;
@@ -109,6 +133,7 @@ body {
 	font-weight: 900;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
+
 .index .question-count .small {
 	color: #fff;
 	font-size: 18px;
@@ -117,35 +142,35 @@ body {
 	padding: 0;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
-.question h2 {
+
+.index .question h2 {
 	margin-bottom: 8px;
 }
-.question > a {
+
+.index .question > a {
 	color: #000
 }
-.question:hover {
+
+.index .question:hover {
 	box-shadow: 1px 1px 8px rgba(0,0,0,0.6);
 	color: #000
 }
+
 .page-header h3 {
 	font-family: 'Lobster', cursive;
 }
+
 .commentboxbg {
 	background: rgb(135,224,253); /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%); /* FF3.6-15 */
-	background: -webkit-radial-gradient(center, ellipse cover, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: radial-gradient(ellipse at center, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0', GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%); 
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%);
+ 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0', GradientType=1 );
 	margin-bottom: 30px;
 }
+
 /* Detailpage Design
 *****************************/
-.navbar-brand:after {
-	content: "/Nachgefragt";
-}
-.navbar-brand>img {
-	display: inline-block;
-}
 .heroimage {
 	position: relative;
 	background-image: url("img/02.jpg");
@@ -154,12 +179,14 @@ body {
 	background-position: left -100px;
 	background-color: #000;
 }
+
 .heroimage-shadow {
 	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+ */
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 ); /* IE6-9 */
 }
+
 .heroimage h1 {
 	padding: 80px 0 0 0;
 	font-size: 60px;
@@ -168,18 +195,21 @@ body {
 	font-weight: 900;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
+
 .heroimage p {
 	padding: 0;
 	font-size: 20px;
 	color: #fff;
 	margin-bottom: 40px;
 }
+
 .nextdate {
 	background-color: #efefef;
 	margin: 0px auto 0;
 	position: relative;
 	padding: 10px;
 }
+
 .nextdate p {
 	font-size: 22px;
 	font-weight: 900;
@@ -187,45 +217,55 @@ body {
 	color: #000;
 	margin-bottom: 30px;
 }
+
 .flip-clock-wrapper {
 	margin: 0 auto 30px;
 	width: 620px;
 }
+
 p.submitter {
 	color: #888888;
 	font-size: 12px;
 }
+
 p.submitter strong {
 	color: black;
 }
+
 p.commentlink {
 	font-size: 12px;
 	text-align: right;
 }
+
 .live .qmark {
 	font-size: 48px;
 	vertical-align: middle;
 	text-align: center;
 	font-weight: bold;
 }
+
 .live .antwort, .live h2, .live .question h2, .live .question {
 	margin-top: 0;
 	font-weight: normal;
 	font-size: 16px;
 }
+
 .live .question {
 	margin-top: 30px;
 	margin-bottom: 0;
 }
+
 .live .answer {
 	background-color: #efefef;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 	margin-top: 0px;
 	padding: 20px;
 }
+
 .live .nextdate p {
 	margin-bottom: 0;
 }
+
 .widget-area {
 	background-color: #fff;
 	-webkit-border-radius: 4px;
@@ -240,6 +280,7 @@ p.commentlink {
 	position: relative;
 	width: 100%;
 }
+
 .status-upload {
 	background: none repeat scroll 0 0 #f5f5f5;
 	-webkit-border-radius: 4px;
@@ -250,10 +291,12 @@ p.commentlink {
 	float: left;
 	width: 100%;
 }
+
 .status-upload form {
 	float: left;
 	width: 100%;
 }
+
 .status-upload form textarea {
 	background: #fff;
 	border: medium none;
@@ -273,6 +316,7 @@ p.commentlink {
 	outline: none;
 	border: 1px solid #ccc;
 }
+
 .status-upload ul {
 	float: left;
 	list-style: none outside none;
@@ -280,9 +324,11 @@ p.commentlink {
 	padding: 0 0 0 15px;
 	width: auto;
 }
+
 .status-upload ul > li {
 	float: left;
 }
+
 .status-upload ul > li > a {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -304,10 +350,12 @@ p.commentlink {
 	width: 30px;
 	cursor: pointer;
 }
+
 .status-upload ul > li > a:hover {
 	background: none repeat scroll 0 0 #606060;
 	color: #fff;
 }
+
 .status-upload form button {
 	border: medium none;
 	-webkit-border-radius: 4px;
@@ -324,17 +372,21 @@ p.commentlink {
 	margin-bottom: 9px;
 	padding: 6px 15px;
 }
+
 .dropdown > a > span.green:before {
 	border-left-color: #2dcb73;
 }
+
 .status-upload form button > i {
 	margin-right: 7px;
 }
+
 .question {
 	margin-bottom: 50px;
 	box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
 	padding: 15px;
 }
+
 .question .hottopic {
 	position: absolute;
 	left: -13px;
@@ -346,9 +398,11 @@ p.commentlink {
 	padding: 3px;
 	transform: rotate(-45deg);
 }
+
 .question h2 {
 	font-size: 24px;
 }
+
 .detail .question .col-sm-10 {
 	padding-top: 15px;
 	border-right: 1px solid #ccc;
