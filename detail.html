@@ -45,7 +45,7 @@
       <div class="widget-area no-padding blank">
         <div class="status-upload">
           <form>
-            <textarea placeholder="Stellen Sie Ihre Frage" ></textarea>
+            <textarea placeholder="Stellen Sie Ihre Frage" id="question_text"></textarea>
             <button type="submit" class="btn btn-success green">Frage abschicken</button>
           </form>
         </div>
@@ -55,7 +55,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-8 col-md-offset-2" id="question_list">
       <div class="question clearfix">
         <div class="col-sm-12">
           <div class="small pull-left">User <strong>Flamegate</strong> fragt:</div>
@@ -145,10 +145,40 @@
 <script src="scripts/flipclock.min.js"></script> 
 <script src="scripts/jquery.upvote.js"></script>
 
+<script type="text/template" id="question_template">
+      <div class="question clearfix">
+        <div class="col-sm-12">
+          <div class="small pull-left">User <strong>Flamegate</strong> fragt:</div>
+          <div class="small pull-right text-muted ">5 minutes ago</div>
+        </div>
+        <div class="col-sm-10">
+          <p>Wachstum, Wachstum, Wachstum Ab wann wirds denn in Aut wirklich eng? 9Mio, 10Mio? Mit oder ohne Integration und Werteblabla - eine ständig steigende Bevölkerungszahl wird uns so dermasen auf den Kopf fallen, da braucht keiner Angst haben wegen Pensionen oder ähnlichen!</p>
+        </div>
+        <div class="col-sm-2">
+          <div class="upvote">
+            <div class="hottopic">HOT</div>
+            <span class="count">98</span> <span class="small">User haben Interesse</span></div>
+        </div>
+        <div class="col-sm-12">
+          <button class="btn center-block btn-info" data-toggle="modal" data-target=".bs-success-modal">Interessiert mich auch</button>
+        </div>
+      </div>
+</script>
+
 <script>
 $('[data-target]').on('click', function(x) {
   var el = $(this).parents(".question").first().find(".upvote .count");
   el.text(parseInt(el.text())+1);
+});
+$('[type="submit"]').on('click', function(x) {
+  console.log(this);
+  console.log(this.form.question_text.value);
+  var text = $('#question_template').text();
+
+  console.log(text.replace(/\n/g,'br'));
+
+  $('<div>wtf</div>').insertBefore($(".question").first());
+  return false;
 });
 </script>
 </body>
