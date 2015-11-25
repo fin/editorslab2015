@@ -250,6 +250,7 @@ p.commentlink {
     font-size: 9px;
     font-weight: bold;
     padding: 3px;
+	    transform: rotate(-45deg);
 }
 
 .question h2 {
