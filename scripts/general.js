@@ -20,8 +20,10 @@
   prefix : '', 
   suffix : '' 
 };
-var demo = new CountUp("qcount", 0, 27, 0, 50, options);
-demo.start();
+if($("#qcount").length>0) {
+  var demo = new CountUp("qcount", 0, 27, 0, 50, options);
+  demo.start();
+}
 				
 	});
 	

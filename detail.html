@@ -70,7 +70,7 @@
             <span class="count">98</span> <span class="small">User haben Interesse</span></div>
         </div>
         <div class="col-lg-12">
-          <button class="btn center-block btn-info">Interessiert mich auch</button>
+          <button class="btn center-block btn-info" data-toggle="modal" data-target=".bs-success-modal">Interessiert mich auch</button>
         </div>
       </div>
       <div class="question clearfix">
@@ -85,7 +85,7 @@
           <div class="upvote"> <span class="count">8</span> <span class="small">User haben Interesse</span></div>
         </div>
         <div class="col-lg-12">
-          <button class="btn center-block btn-info">Interessiert mich auch</button>
+          <button class="btn center-block btn-info" data-toggle="modal" data-target=".bs-success-modal">Interessiert mich auch</button>
         </div>
       </div>
       <div class="question clearfix">
@@ -100,7 +100,7 @@
           <div class="upvote"> <span class="count">24</span> <span class="small">User haben Interesse</span></div>
         </div>
         <div class="col-lg-12">
-          <button class="btn center-block btn-info">Interessiert mich auch</button>
+          <button class="btn center-block btn-info" data-toggle="modal" data-target=".bs-success-modal">Interessiert mich auch</button>
         </div>
       </div>
       <div class="question clearfix">
@@ -115,11 +115,22 @@
           <div class="upvote"> <span class="count">9</span> <span class="small">User haben Interesse</span></div>
         </div>
         <div class="col-lg-12">
-          <button class="btn center-block btn-info">Interessiert mich auch</button>
+          <button class="btn center-block btn-info" data-toggle="modal" data-target=".bs-success-modal">Interessiert mich auch</button>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="modal fade bs-success-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+  <div class="modal-header">
+    <h4>Danke für deine Bewertung!</h4>
+  </div>
+  <div class="modal-body">
+    <p>Wir werden dich benachrichtigen, wenn die Frage beantwortet wurde!</p>
+  </div>
+</div>
 </div>
 </div>
 
@@ -130,5 +141,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script> 
 <script src="scripts/flipclock.min.js"></script> 
 <script src="scripts/jquery.upvote.js"></script>
+
+<script>
+$('[data-target]').on('click', function(x) {
+  var el = $(this).parents(".question").first().find(".upvote .count");
+  el.text(parseInt(el.text())+1);
+});
+</script>
 </body>
 </html>
