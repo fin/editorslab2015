@@ -244,10 +244,11 @@ p.commentlink {
 	font-weight: bold;
 }
 
-.live .antwort, .live h2, .live .question h2, .live .question {
-	margin-top: 0;
-	font-weight: normal;
-	font-size: 16px;
+.live .antwort, .live h2, .live .question h2, .live .question, .live .nachfrage {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 16px;
+
 }
 
 .live .question {
@@ -260,6 +261,13 @@ p.commentlink {
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 	margin-top: 0px;
 	padding: 20px;
+}
+
+.live .nachfrage {
+    background-color: #fafafa;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    margin-top: 0px;
+    padding: 20px;
 }
 
 .live .nextdate p {
@@ -407,4 +415,20 @@ p.commentlink {
 	padding-top: 15px;
 	border-right: 1px solid #ccc;
 	min-height: 115px;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 1em;
+}
+
+blockquote p {
+  font-style: italic;
+  font-weight: 14px;
+}
+
+blockquote p.submitter {
+  font-style: normal;
 }
